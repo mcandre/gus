@@ -1,0 +1,42 @@
+[submodule "vendor/gopkg.in/src-d/go-git.v4"]
+	path = vendor/gopkg.in/src-d/go-git.v4
+	url = https://github.com/src-d/go-git.git
+[submodule "vendor/github.com/emirpasic/gods"]
+	path = vendor/github.com/emirpasic/gods
+	url = https://github.com/emirpasic/gods.git
+[submodule "vendor/github.com/jbenet/go-context"]
+	path = vendor/github.com/jbenet/go-context
+	url = https://github.com/jbenet/go-context.git
+[submodule "vendor/github.com/kevinburke/ssh_config"]
+	path = vendor/github.com/kevinburke/ssh_config
+	url = https://github.com/kevinburke/ssh_config.git
+[submodule "vendor/github.com/mitchellh/go-homedir"]
+	path = vendor/github.com/mitchellh/go-homedir
+	url = https://github.com/mitchellh/go-homedir.git
+[submodule "vendor/github.com/sergi/go-diff"]
+	path = vendor/github.com/sergi/go-diff
+	url = https://github.com/sergi/go-diff.git
+[submodule "vendor/github.com/src-d/gcfg"]
+	path = vendor/github.com/src-d/gcfg
+	url = https://github.com/src-d/gcfg.git
+[submodule "vendor/github.com/xanzy/ssh-agent"]
+	path = vendor/github.com/xanzy/ssh-agent
+	url = https://github.com/xanzy/ssh-agent.git
+[submodule "vendor/golang.org/x/crypto"]
+	path = vendor/golang.org/x/crypto
+	url = https://github.com/golang/crypto.git
+[submodule "vendor/golang.org/x/net"]
+	path = vendor/golang.org/x/net
+	url = https://github.com/golang/net.git
+[submodule "vendor/gopkg.in/src-d/go-billy.v4"]
+	path = vendor/gopkg.in/src-d/go-billy.v4
+	url = https://github.com/src-d/go-billy.git
+[submodule "vendor/golang.org/x/sys"]
+	path = vendor/golang.org/x/sys
+	url = https://github.com/golang/sys.git
+[submodule "vendor/gopkg.in/warnings.v0"]
+	path = vendor/gopkg.in/warnings.v0
+	url = https://github.com/go-warnings/warnings.git
+[submodule "vendor/github.com/mcandre/mage-extras"]
+	path = vendor/github.com/mcandre/mage-extras
+	url = https://github.com/mcandre/mage-extras.git
