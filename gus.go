@@ -32,6 +32,7 @@ const gitCommand = "git"
 const submoduleSubCommand = "submodule"
 
 const addSubCommand = "add"
+const forceFlag = "-f"
 const branchFlag = "-b"
 
 const removeSubCommand = "rm"
@@ -84,7 +85,7 @@ func AddSubmodule(top string, url string, target string, branch string) error {
 	// Pending https://github.com/src-d/go-git/issues/597
 	//
 
-	args := []string{submoduleSubCommand, addSubCommand}
+	args := []string{submoduleSubCommand, addSubCommand, forceFlag}
 
 	if branch != "" {
 		args = append(args, branchFlag, branch)
@@ -98,6 +99,7 @@ func AddSubmodule(top string, url string, target string, branch string) error {
 
 	cmd := exec.Command(gitCommand, args...)
 	cmd.Dir = top
+	cmd.Stderr = os.Stderr
 	return cmd.Run()
 }
 
@@ -157,6 +159,7 @@ func RemoveSubmodule(top string, url string) error {
 
 	cmd := exec.Command(gitCommand, addSubCommand, gitModulesBasename)
 	cmd.Dir = top
+	cmd.Stderr = os.Stderr
 
 	if err2 := cmd.Run(); err2 != nil {
 		return nil
@@ -194,6 +197,7 @@ func RemoveSubmodule(top string, url string) error {
 
 	cmd = exec.Command(gitCommand, removeSubCommand, cachedFlag, recursiveFlag, *pth)
 	cmd.Dir = top
+	cmd.Stderr = os.Stderr
 
 	if err2 := cmd.Run(); err2 != nil {
 		return err2
